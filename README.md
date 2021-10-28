@@ -6,7 +6,7 @@
 * The use gives stateful list of selected and unselected items with a method to swap items between lists 
 * Prop to add preselected list
 #### Demo
-[See Demo on Sandbox](https://codesandbox.io/s/react-feature-flags-hooks-64n45?file=/src/Page/Home/ToggleFlags.jsx)
+[See Demo on Sandbox](https://codesandbox.io/s/github/Badalmishra/useSwap)
 ### SwapContainer.js
 * usage of useSwap hook
 ```js
