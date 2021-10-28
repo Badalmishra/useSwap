@@ -1,15 +1,3 @@
-# React Swap List Hooks
-
-### Hooks 
-* useSwap
-### Features
-* The use gives stateful list of selected and unselected items with a method to swap items between lists 
-* Prop to add preselected list
-#### Demo
-[See Demo on Sandbox](https://codesandbox.io/s/react-feature-flags-hooks-64n45?file=/src/Page/Home/ToggleFlags.jsx)
-### SwapContainer.js
-* usage of useSwap hook
-```js
 import React from "react";
 import useSwap from "../use-swap/";
 import ListItem from "./ListItem";
@@ -74,26 +62,3 @@ const SwapContainer = () => {
 };
 
 export default SwapContainer;
-```
-### ListItem.js
-* using the swap method
-```JS
-import React from 'react'
-
-const ListItem = ({item,swap,title}) => {
-    const handleClick = ()=>{
-        swap(item.primaryKey)
-    }
-    return (
-        <div onClick={handleClick} title={title} className={'listItem'}>
-            {item.icon}
-        </div>
-    )
-}
-
-export default ListItem
-
-```
-
-### Output
-![Output with console logs](Screenshot.png "Output")

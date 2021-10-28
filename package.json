@@ -1,19 +1,30 @@
 {
-  "name": "swap",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-use-swap",
+  "version": "0.0.1",
+  "main": "dist/index.umd.min.js",
+  "module": "dist/index.es.js",
+  "types": "dist/use-swap/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
+    "@rollup/plugin-babel": "^5.3.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.4",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +45,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.33"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0  || ^17.0.0"
   }
 }
