@@ -6,7 +6,7 @@
 * The use gives stateful list of selected and unselected items with a method to swap items between lists 
 * Prop to add preselected list
 #### Demo
-[See Demo on Sandbox](https://codesandbox.io/s/github/Badalmishra/useSwap)
+[See Demo on Sandbox](https://codesandbox.io/s/friendly-sammet-nv0wn)
 ### SwapContainer.js
 * usage of useSwap hook
 ```js
