@@ -1,7 +1,10 @@
-# React Swap List Hooks
+# React useSwap Swapable List Hooks
 
-### Hooks 
-* useSwap
+### Installation 
+* npm repository will be available soon 
+```
+npm i https://github.com/Badalmishra/useSwap.git
+```
 ### Features
 * The use gives stateful list of selected and unselected items with a method to swap items between lists 
 * Prop to add preselected list
