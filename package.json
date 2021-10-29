@@ -1,6 +1,6 @@
 {
   "name": "react-use-swap",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.umd.min.js",
   "module": "dist/index.es.js",
   "types": "dist/use-swap/index.d.ts",
