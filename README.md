@@ -1,7 +1,11 @@
 # React useSwap Swapable List Hooks
 
 ### Installation 
-* npm repository will be available soon 
+* From npm registry
+```
+npm i react-use-swap
+```
+* From Github ( will have more recentbut unstable updates) 
 ```
 npm i https://github.com/Badalmishra/useSwap.git
 ```
@@ -14,7 +18,7 @@ npm i https://github.com/Badalmishra/useSwap.git
 * usage of useSwap hook
 ```js
 import React from "react";
-import useSwap from "../use-swap/";
+import useSwap from "react-use-swap";
 import ListItem from "./ListItem";
 
 const SwapContainer = () => {
